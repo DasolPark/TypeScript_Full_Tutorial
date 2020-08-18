@@ -37,7 +37,7 @@ const person = {
 
 // person.role = [0, 'admin', 'user']; // 여기서는 개수를 잡아낸다
 
-let favoriteActivities: string[]; // any[]
+let favoriteActivities: string[]; // any[]는 Vanilla JS에서도 사용 가능하며, 추천하지 않는다.
 favoriteActivities = ['Sports'];
 
 console.log(person.name);
