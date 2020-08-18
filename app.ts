@@ -1,7 +1,10 @@
+type Combinable = number | string; // type alias
+type ConversionDescriptor = 'as-number' | 'as-text';
+
 function combine(
-  input1: number | string,
-  input2: number | string,
-  resultConversion: 'as-number' | 'as-text' // or string
+  input1: Combinable,
+  input2: Combinable,
+  resultConversion: ConversionDescriptor // or string
   // 위와 같이 한 경우 parameter를 보낼 때 typo가 생기면 오류가 발생
 ) {
   let result;

@@ -1,4 +1,5 @@
 function combine(input1, input2, resultConversion // or string
+// 위와 같이 한 경우 parameter를 보낼 때 typo가 생기면 오류가 발생
 ) {
     var result;
     // Extra runtime check
