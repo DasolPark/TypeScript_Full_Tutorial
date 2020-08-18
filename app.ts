@@ -10,9 +10,11 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string) {
   }
 }
 
-const number1 = 5; // 5.0
+let number1: number;
+number1 = 5;
 const number2 = 2.8;
-let printResult = true;
-const resultPhrase = 'Result is: ';
+const printResult = true;
+let resultPhrase = 'Result is: ';
+resultPhrase = 0;
 
 add(number1, number2, printResult, resultPhrase);
