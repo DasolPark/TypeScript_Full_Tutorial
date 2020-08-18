@@ -1,14 +1,24 @@
-function combine(input1, input2) {
+function combine(input1, input2, resultConversion // or string
+) {
     var result;
-    if (typeof input1 === 'number' && typeof input2 === 'number') {
-        result = input1 + input2;
+    // Extra runtime check
+    if ((typeof input1 === 'number' && typeof input2 === 'number') ||
+        resultConversion === 'as-number') {
+        result = +input1 + +input2;
     }
     else {
         result = input1.toString() + input2.toString();
     }
     return result;
+    // if (resultConversion === 'as-number') {
+    //   return +result; // parseFloat();
+    // } else {
+    //   return result.toString();
+    // }
 }
-var combineAges = combine(30, 26);
-console.log(combineAges);
-var combineNames = combine('Max', 'Anna');
-console.log(combineNames);
+var combinedAges = combine(30, 26, 'as-number');
+console.log(combinedAges);
+var combinedStringAges = combine('30', '26', 'as-number');
+console.log(combinedStringAges);
+var combinedNames = combine('Max', 'Anna', 'as-text');
+console.log(combinedNames);
