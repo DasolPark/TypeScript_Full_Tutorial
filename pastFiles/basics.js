@@ -18,3 +18,4 @@ const printResult = true;
 let resultPhrase = 'Result is: ';
 // resultPhrase = 0;
 add(number1, number2, printResult, resultPhrase);
+//# sourceMappingURL=basics.js.map

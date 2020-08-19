@@ -51,3 +51,6 @@
 - "exclude":["file.ts"]
 - "include":["file.ts"]
 - "files":["file.ts"]
+
+## sourceMap
+Simplify debug in Chrome browser with .ts
