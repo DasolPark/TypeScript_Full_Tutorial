@@ -19,9 +19,14 @@
 - [ ] Literal Types
 - [ ] Type Aliases
 
-######
-tsc --watch(or -w)
+## For Compile
+- tsc --watch(or -w)
 
-tsc --init
-tsc
-tsc --watch(or -w)
+- tsc --init
+- tsc
+- tsc --watch(or -w)
+
+## For Include or Exclude Files
+- "exclude":["file.ts"]
+- "include":["file.ts"]
+- "files":["file.ts"]

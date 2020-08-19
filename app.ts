@@ -1,5 +1,3 @@
-// tsc app.ts --watch (or -w)
-
-const userName = 'Maxi';
+const userName = 'David';
 
 console.log(userName);

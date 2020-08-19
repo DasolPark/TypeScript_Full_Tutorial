@@ -1,4 +1,3 @@
 "use strict";
-// tsc app.ts --watch (or -w)
-var userName = 'Maxi';
+var userName = 'David';
 console.log(userName);
