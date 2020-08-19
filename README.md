@@ -18,3 +18,10 @@
 - [ ] Union Types
 - [ ] Literal Types
 - [ ] Type Aliases
+
+######
+tsc --watch(or -w)
+
+tsc --init
+tsc
+tsc --watch(or -w)
