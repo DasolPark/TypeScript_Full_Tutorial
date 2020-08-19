@@ -74,3 +74,7 @@ false를 설정하면 오류가 있든 없든 output 생성, true를 설정하�
 - noUnusedLocals
 - noUnusedParameters
 - noImplicitReturns
+
+### Debugging with Visual Studio Code
+- Debugger for Chrome Extension
+- "sourceMap": true in tsconfig.json
