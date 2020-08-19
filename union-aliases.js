@@ -2,7 +2,7 @@
 function combine(input1, input2, resultConversion // or string
 // 위와 같이 한 경우 parameter를 보낼 때 typo가 생기면 오류가 발생
 ) {
-    var result;
+    let result;
     // Extra runtime check
     if ((typeof input1 === 'number' && typeof input2 === 'number') ||
         resultConversion === 'as-number') {
@@ -18,9 +18,9 @@ function combine(input1, input2, resultConversion // or string
     //   return result.toString();
     // }
 }
-var combinedAges = combine(30, 26, 'as-number');
+const combinedAges = combine(30, 26, 'as-number');
 console.log(combinedAges);
-var combinedStringAges = combine('30', '26', 'as-number');
+const combinedStringAges = combine('30', '26', 'as-number');
 console.log(combinedStringAges);
-var combinedNames = combine('Max', 'Anna', 'as-text');
+const combinedNames = combine('Max', 'Anna', 'as-text');
 console.log(combinedNames);
