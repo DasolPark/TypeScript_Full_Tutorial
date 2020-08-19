@@ -70,3 +70,7 @@ false를 설정하면 오류가 있든 없든 output 생성, true를 설정하�
 ### Strict Type-Checking Options
 "strict": true Or 나머지 원하는 대로 setting
 
+### Additional Checks
+- noUnusedLocals
+- noUnusedParameters
+- noImplicitReturns
