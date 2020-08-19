@@ -1,28 +1,10 @@
-function add(n1: number, n2: number) {
-  return n1 + n2;
+let userInput: unknown; // unknown is more restrictive than any
+let userName: string;
+
+userInput = 5;
+userInput = 'Max';
+
+// 어떤 값이 올 지 예상할 수 없고, 한 번 더 type을 체크할 상황이라면 유용하다
+if (typeof userInput === 'string') {
+  userName = userInput;
 }
-
-function printResult(num: number): void {
-  console.log('Result: ' + num);
-}
-
-function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
-  const result = n1 + n2;
-  cb(result);
-}
-
-printResult(add(5, 12));
-
-let combineValues: (a: number, n: number) => number;
-
-combineValues = add;
-// combineValues = printResult;
-// combineValues = 5;
-
-console.log(combineValues(8, 8));
-
-// let someValue: undefined;
-
-addAndHandle(10, 20, (result) => {
-  console.log(result);
-});
