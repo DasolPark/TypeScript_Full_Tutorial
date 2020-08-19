@@ -28,6 +28,9 @@
     // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
     // "downlevelIteration": true,            /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
     // "isolatedModules": true,               /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+    "noEmitOnError": true,
+    // noEmitOnError: false를 설정하면 문제가 있든 없든 output을 생성함(에러는 발생)
+    // 반면에 true를 설정하면, 오류가 있을 경우 output를 생성하지 않음
 
     /* Strict Type-Checking Options */
     "strict": true /* Enable all strict type-checking options. */,

@@ -1,5 +1,2 @@
 console.log('Sending...');
-
-// tsc --init
-// tsc
-// tsc --watch(or -w)
+const userName = 'david';
