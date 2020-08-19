@@ -39,18 +39,34 @@
 - [ ] Debugging with Visual Studio Code
 - [ ] Wrap Up
 
-## For Compile
+### For Compile
 - tsc --watch(or -w)
 
 - tsc --init
 - tsc
 - tsc --watch(or -w)
 
-## For Include or Exclude Files
+### For Include or Exclude Files
 - tsconfing.json
 - "exclude":["file.ts"]
 - "include":["file.ts"]
 - "files":["file.ts"]
 
-## sourceMap
+## tsconfig.json
+
+### Basic Options
+
+- target
+- module
+- lib
+- sourceMap
 Simplify debug in Chrome browser with .ts
+- outDir and rootDir
+원하는 경로에 있는 ts 파일을 컴파일하여 원하는 경로로 js 파일 생성
+- removeComments
+- noEmitOnError
+false를 설정하면 오류가 있든 없든 output 생성, true를 설정하면 오류가 있을 경우 output 생성X
+
+### Strict Type-Checking Options
+"strict": true Or 나머지 원하는 대로 setting
+

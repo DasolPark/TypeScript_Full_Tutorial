@@ -1,8 +1,10 @@
-const button = document.querySelector('button');
+const button = document.querySelector('button')!; // No! this button is exist
+
+function clickHandler(message: string) {
+  console.log('Clicked!' + message);
+}
 
 // a comment
-button.addEventListener('click', () => {
-  console.log('Clicked!');
-});
-
-// noEmitOnError: false를 설정하면 문제가 있든 없든 output을 생성함(에러는 발생)
+if (button) {
+  button.addEventListener('click', clickHandler.bind(null, "You're welcome!"));
+}
