@@ -1,10 +1,17 @@
-let userInput: unknown; // unknown is more restrictive than any
+let userInput: unknown;
 let userName: string;
 
 userInput = 5;
 userInput = 'Max';
-
-// 어떤 값이 올 지 예상할 수 없고, 한 번 더 type을 체크할 상황이라면 유용하다
 if (typeof userInput === 'string') {
   userName = userInput;
 }
+
+// 큰 프로젝트에서 굉장히 흔하게 사용하는 방법
+// void로 반환되는 것 같지만, 사실 반환 type은 never
+function generateError(message: string, code: number): never {
+  throw { message: message, errorCode: code };
+  // while (true) {}
+}
+
+generateError('An error occurred!', 500);
